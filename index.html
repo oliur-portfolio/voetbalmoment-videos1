@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- <meta name="robots" content="nofollow"> -->
+
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
+
+        <!-- Main Template Styles -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+
+        <title>Voetbalmoment.nl</title>
+        <meta name="description" content="#" />
+        <meta name="keywords" content="#" />
+        <link rel="canonical" href="#" />
+    </head>
+    <body>
+        <div class="preloader"></div>
+
+        <!-- Header Area -->
+        <div class="header-container">
+            <header class="site-header header-one site-header__header-three">
+                <div class="topbar-one thm-black-bg">
+                    <div class="container">
+                        <div class="topbar-one__left">
+                            <p class="topbar-one__text">Welcome to Voetbalmoment.nl <a href="#">Get Started</a></p>
+                        </div>
+                        <div class="topbar-one__right">
+                            <div class="topbar-one__social">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navbar Area -->
+                <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="logo-box clearfix">
+                            <a class="navbar-brand" href="index.php">
+                                <img src="assets/images/resources/logo.png" class="main-logo img-fluid" alt="Awesome Image" />
+                            </a>
+                            <button class="menu-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+                                <span class="fa fa-bars"></span>
+                            </button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="main-navigation collapse navbar-collapse float-right" id="collapsibleNavbar">
+                            <ul class="navigation-box">
+                                <li class="current"><a href="/">Nieuws</a></li>
+                                <li><a href="competities.php">Competities</a></li>
+                                <li><a href="livescore.php">Live Score</a></li>
+                                <li><a href="statistieken.php">Statistieken</a></li>
+                                <li><a href="aan-de-zijlijn.php">Aan de lijn</a></li>
+                                <li><a href="videos.php">Video’s</a></li>
+                                <li><a href="contactus.php">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="right-side-box">
+                            <div class="search-wrapper">
+                                <div class="input-holder">
+                                    <input type="text" class="search-input" placeholder="Type to search" />
+                                    <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                                </div>
+                                <span class="close" onclick="searchToggle(this, event);"></span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Navbar Area -->
+            </header>
+
+            <!-- Inner Banner Area -->
+            <div class="inner-banner">
+                <div class="container flex-column-reverse d-flex justify-content-center align-items-center">
+                    <div class="inner-banner-container">
+                        <ul class="thm-breadcrumb">
+                            <li class="thm-breadcrumb__item">
+                                <a href="#" class="thm-breadcrumb__link">Home</a>
+                            </li>
+                            <li class="thm-breadcrumb__item current">
+                                <a href="#" class="thm-breadcrumb__link">Videos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Inner Banner Area -->
+        </div>
+        <!-- Header Area -->
+
+        <!-- Main Content Area -->
+        <main>
+            <!-- Video Competities Area -->
+            <section class="service-three bg-white ptbv-15">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 match-tables">
+                            <div class="round-wrap mobile-fixx">
+                                <ul class="nav nav-tabs back-fix" role="tablist" style="border-bottom: none">
+                                    <li class="nav-item">
+                                        <a href="#"
+                                            ><h5 style="color: #000">
+                                                Alle <br />
+                                                Competities
+                                            </h5></a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#tabs1" role="tab"> <img src="assets/images/resources/cmt_1.png" /></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tabs2" role="tab"> <img src="assets/images/resources/cmt_2.png" /></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tabs3" role="tab"> <img src="assets/images/resources/cmt_3.png" /></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tabs4" role="tab"> <img src="assets/images/resources/cmt_4.png" /></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tabs5" role="tab"> <img src="assets/images/resources/cmt_1.png" /></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tabs6" role="tab"> <img src="assets/images/resources/cmt_2.png" /></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tabs7" role="tab"> <img src="assets/images/resources/cmt_3.png" /></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tabs8" role="tab"> <img src="assets/images/resources/cmt_4.png" /></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tabs9" role="tab"> <img src="assets/images/resources/cmt_1.png" /></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tabs10" role="tab"> <img src="assets/images/resources/cmt_2.png" /></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Video Competities Area -->
+
+            <!-- Premier League Video Area -->
+            <section class="mbtm service-three videos-top">
+                <div class="container">
+                    <div class="row">
+                        <!-- Single Premier League Video -->
+                        <div class="col-lg-8 mb-md-23">
+                            <div class="service-three__single">
+                                <div class="service-three__image">
+                                    <a href="#"><img src="assets/images/services/services-2-1.jpg" alt="Awesome Image" /></a>
+
+                                    <div class="vedio-overly">
+                                        <div class="vedio-button">
+                                            <a href="https://www.youtube.com/watch?v=YzDz8g1z83U" class="mfp-iframe vedio-play"></a>
+                                        </div>
+                                    </div>
+                                    <div class="feed-info-new">
+                                        <a href="#">
+                                            <img src="assets/images/resources/vl-logo.png" alt="vllogo" />
+                                            <span>Voetbal International </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="title-box-wrap">
+                                        <a href="#"><h3>Bijna alleen maar negatieve tests in Premier League: Spurs als ...</h3></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Premier League Video -->
+
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <!-- Single Premier League Video -->
+                                <div class="col-lg-12 col-md-6 col-sm-6 mb-xl-18 mb-md-23 title-box-info">
+                                    <div class="service-three__single">
+                                        <div class="service-three__image">
+                                            <a href="#"><img src="assets/images/services/services-2-2.jpg" alt="Awesome Image" /></a>
+                                            <div class="vedio-overly">
+                                                <div class="vedio-button">
+                                                    <a href="https://www.youtube.com/watch?v=YzDz8g1z83U" class="mfp-iframe vedio-play"></a>
+                                                </div>
+                                            </div>
+                                            <div class="feed-info-new">
+                                                <a href="#">
+                                                    <img src="assets/images/resources/vl-logo.png" alt="vllogo" />
+                                                    <span>Voetbal International </span>
+                                                </a>
+                                            </div>
+
+                                            <div class="title-box-wrap">
+                                                <a href="#"><h5>Bijna alleen maar negatieve tests in Premier League: Spurs als ...</h5></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Premier League Video -->
+
+                                <!-- Single Premier League Video -->
+                                <div class="col-lg-12 col-md-6 col-sm-6 mb-sm-23 title-box-info">
+                                    <div class="service-three__single">
+                                        <div class="service-three__image">
+                                            <a href="#"><img src="assets/images/services/services-2-3.jpg" alt="Awesome Image" /></a>
+                                            <div class="vedio-overly">
+                                                <div class="vedio-button">
+                                                    <a href="https://www.youtube.com/watch?v=YzDz8g1z83U" class="mfp-iframe vedio-play"></a>
+                                                </div>
+                                            </div>
+                                            <div class="feed-info-new">
+                                                <a href="#">
+                                                    <img src="assets/images/resources/vl-logo.png" alt="vllogo" />
+                                                    <span>Voetbal International </span>
+                                                </a>
+                                            </div>
+
+                                            <div class="title-box-wrap">
+                                                <a href="#"><h5>Bijna alleen maar negatieve tests in Premier League: Spurs als ...</h5></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Premier League Video -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Premier League Video Area -->
+
+            <!-- All Videos Area -->
+            <section class="videos service-three">
+                <div class="container">
+                    <!-- Collapse More Videos -->
+                    <div class="collapse" id="collapseVideos">
+                        <div class="row">
+                            <!-- Single Video -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-xl-23 mb-md-23">
+                                <div class="service-three__single">
+                                    <div class="service-three__image">
+                                        <a href="#"><img src="assets/images/services/services-2-3.jpg" alt="Awesome Image" /></a>
+                                        <div class="vedio-overly">
+                                            <div class="vedio-button">
+                                                <a href="https://www.youtube.com/watch?v=YzDz8g1z83U" class="mfp-iframe vedio-play"></a>
+                                            </div>
+                                        </div>
+                                        <div class="feed-info-new">
+                                            <a href="#">
+                                                <img src="assets/images/resources/vl-logo.png" alt="vllogo" />
+                                                <span>Voetbal International </span>
+                                            </a>
+                                        </div>
+
+                                        <div class="title-box-wrap">
+                                            <a href="#"><h5>Bijna alleen maar negatieve tests in Premier League: Spurs als ...</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Video -->
+
+                            <!-- Single Video -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-xl-23 mb-md-23">
+                                <div class="service-three__single">
+                                    <div class="service-three__image">
+                                        <a href="#"><img src="assets/images/services/services-2-3.jpg" alt="Awesome Image" /></a>
+                                        <div class="vedio-overly">
+                                            <div class="vedio-button">
+                                                <a href="https://www.youtube.com/watch?v=YzDz8g1z83U" class="mfp-iframe vedio-play"></a>
+                                            </div>
+                                        </div>
+                                        <div class="feed-info-new">
+                                            <a href="#">
+                                                <img src="assets/images/resources/vl-logo.png" alt="vllogo" />
+                                                <span>Voetbal International </span>
+                                            </a>
+                                        </div>
+
+                                        <div class="title-box-wrap">
+                                            <a href="#"><h5>Bijna alleen maar negatieve tests in Premier League: Spurs als ...</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Video -->
+
+                            <!-- Single Video -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-xl-23 mb-md-23">
+                                <div class="service-three__single">
+                                    <div class="service-three__image">
+                                        <a href="#"><img src="assets/images/services/services-2-3.jpg" alt="Awesome Image" /></a>
+                                        <div class="vedio-overly">
+                                            <div class="vedio-button">
+                                                <a href="https://www.youtube.com/watch?v=YzDz8g1z83U" class="mfp-iframe vedio-play"></a>
+                                            </div>
+                                        </div>
+                                        <div class="feed-info-new">
+                                            <a href="#">
+                                                <img src="assets/images/resources/vl-logo.png" alt="vllogo" />
+                                                <span>Voetbal International </span>
+                                            </a>
+                                        </div>
+
+                                        <div class="title-box-wrap">
+                                            <a href="#"><h5>Bijna alleen maar negatieve tests in Premier League: Spurs als ...</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Video -->
+
+                            <!-- Single Video -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-xl-23 mb-md-23">
+                                <div class="service-three__single">
+                                    <div class="service-three__image">
+                                        <a href="#"><img src="assets/images/services/services-2-3.jpg" alt="Awesome Image" /></a>
+                                        <div class="vedio-overly">
+                                            <div class="vedio-button">
+                                                <a href="https://www.youtube.com/watch?v=YzDz8g1z83U" class="mfp-iframe vedio-play"></a>
+                                            </div>
+                                        </div>
+                                        <div class="feed-info-new">
+                                            <a href="#">
+                                                <img src="assets/images/resources/vl-logo.png" alt="vllogo" />
+                                                <span>Voetbal International </span>
+                                            </a>
+                                        </div>
+
+                                        <div class="title-box-wrap">
+                                            <a href="#"><h5>Bijna alleen maar negatieve tests in Premier League: Spurs als ...</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Video -->
+
+                            <!-- Single Video -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-xl-23 mb-md-23">
+                                <div class="service-three__single">
+                                    <div class="service-three__image">
+                                        <a href="#"><img src="assets/images/services/services-2-3.jpg" alt="Awesome Image" /></a>
+                                        <div class="vedio-overly">
+                                            <div class="vedio-button">
+                                                <a href="https://www.youtube.com/watch?v=YzDz8g1z83U" class="mfp-iframe vedio-play"></a>
+                                            </div>
+                                        </div>
+                                        <div class="feed-info-new">
+                                            <a href="#">
+                                                <img src="assets/images/resources/vl-logo.png" alt="vllogo" />
+                                                <span>Voetbal International </span>
+                                            </a>
+                                        </div>
+
+                                        <div class="title-box-wrap">
+                                            <a href="#"><h5>Bijna alleen maar negatieve tests in Premier League: Spurs als ...</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Video -->
+
+                            <!-- Single Video -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-xl-23 mb-md-23">
+                                <div class="service-three__single">
+                                    <div class="service-three__image">
+                                        <a href="#"><img src="assets/images/services/services-2-3.jpg" alt="Awesome Image" /></a>
+                                        <div class="vedio-overly">
+                                            <div class="vedio-button">
+                                                <a href="https://www.youtube.com/watch?v=YzDz8g1z83U" class="mfp-iframe vedio-play"></a>
+                                            </div>
+                                        </div>
+                                        <div class="feed-info-new">
+                                            <a href="#">
+                                                <img src="assets/images/resources/vl-logo.png" alt="vllogo" />
+                                                <span>Voetbal International </span>
+                                            </a>
+                                        </div>
+
+                                        <div class="title-box-wrap">
+                                            <a href="#"><h5>Bijna alleen maar negatieve tests in Premier League: Spurs als ...</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Video -->
+
+                            <!-- Single Video -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-xl-23 mb-md-23">
+                                <div class="service-three__single">
+                                    <div class="service-three__image">
+                                        <a href="#"><img src="assets/images/services/services-2-3.jpg" alt="Awesome Image" /></a>
+                                        <div class="vedio-overly">
+                                            <div class="vedio-button">
+                                                <a href="https://www.youtube.com/watch?v=YzDz8g1z83U" class="mfp-iframe vedio-play"></a>
+                                            </div>
+                                        </div>
+                                        <div class="feed-info-new">
+                                            <a href="#">
+                                                <img src="assets/images/resources/vl-logo.png" alt="vllogo" />
+                                                <span>Voetbal International </span>
+                                            </a>
+                                        </div>
+
+                                        <div class="title-box-wrap">
+                                            <a href="#"><h5>Bijna alleen maar negatieve tests in Premier League: Spurs als ...</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Video -->
+
+                            <!-- Single Video -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-xl-23 mb-md-23">
+                                <div class="service-three__single">
+                                    <div class="service-three__image">
+                                        <a href="#"><img src="assets/images/services/services-2-3.jpg" alt="Awesome Image" /></a>
+                                        <div class="vedio-overly">
+                                            <div class="vedio-button">
+                                                <a href="https://www.youtube.com/watch?v=YzDz8g1z83U" class="mfp-iframe vedio-play"></a>
+                                            </div>
+                                        </div>
+                                        <div class="feed-info-new">
+                                            <a href="#">
+                                                <img src="assets/images/resources/vl-logo.png" alt="vllogo" />
+                                                <span>Voetbal International </span>
+                                            </a>
+                                        </div>
+
+                                        <div class="title-box-wrap">
+                                            <a href="#"><h5>Bijna alleen maar negatieve tests in Premier League: Spurs als ...</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Video -->
+
+                            <!-- Single Video -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-xl-23 mb-md-23">
+                                <div class="service-three__single">
+                                    <div class="service-three__image">
+                                        <a href="#"><img src="assets/images/services/services-2-3.jpg" alt="Awesome Image" /></a>
+                                        <div class="vedio-overly">
+                                            <div class="vedio-button">
+                                                <a href="https://www.youtube.com/watch?v=YzDz8g1z83U" class="mfp-iframe vedio-play"></a>
+                                            </div>
+                                        </div>
+                                        <div class="feed-info-new">
+                                            <a href="#">
+                                                <img src="assets/images/resources/vl-logo.png" alt="vllogo" />
+                                                <span>Voetbal International </span>
+                                            </a>
+                                        </div>
+
+                                        <div class="title-box-wrap">
+                                            <a href="#"><h5>Bijna alleen maar negatieve tests in Premier League: Spurs als ...</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Video -->
+
+                            <!-- Single Video -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-xl-23 mb-md-23">
+                                <div class="service-three__single">
+                                    <div class="service-three__image">
+                                        <a href="#"><img src="assets/images/services/services-2-3.jpg" alt="Awesome Image" /></a>
+                                        <div class="vedio-overly">
+                                            <div class="vedio-button">
+                                                <a href="https://www.youtube.com/watch?v=YzDz8g1z83U" class="mfp-iframe vedio-play"></a>
+                                            </div>
+                                        </div>
+                                        <div class="feed-info-new">
+                                            <a href="#">
+                                                <img src="assets/images/resources/vl-logo.png" alt="vllogo" />
+                                                <span>Voetbal International </span>
+                                            </a>
+                                        </div>
+
+                                        <div class="title-box-wrap">
+                                            <a href="#"><h5>Bijna alleen maar negatieve tests in Premier League: Spurs als ...</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Video -->
+
+                            <!-- Single Video -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-xl-23 mb-md-23">
+                                <div class="service-three__single">
+                                    <div class="service-three__image">
+                                        <a href="#"><img src="assets/images/services/services-2-3.jpg" alt="Awesome Image" /></a>
+                                        <div class="vedio-overly">
+                                            <div class="vedio-button">
+                                                <a href="https://www.youtube.com/watch?v=YzDz8g1z83U" class="mfp-iframe vedio-play"></a>
+                                            </div>
+                                        </div>
+                                        <div class="feed-info-new">
+                                            <a href="#">
+                                                <img src="assets/images/resources/vl-logo.png" alt="vllogo" />
+                                                <span>Voetbal International </span>
+                                            </a>
+                                        </div>
+
+                                        <div class="title-box-wrap">
+                                            <a href="#"><h5>Bijna alleen maar negatieve tests in Premier League: Spurs als ...</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Video -->
+
+                            <!-- Single Video -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-xl-23 mb-md-23">
+                                <div class="service-three__single">
+                                    <div class="service-three__image">
+                                        <a href="#"><img src="assets/images/services/services-2-3.jpg" alt="Awesome Image" /></a>
+                                        <div class="vedio-overly">
+                                            <div class="vedio-button">
+                                                <a href="https://www.youtube.com/watch?v=YzDz8g1z83U" class="mfp-iframe vedio-play"></a>
+                                            </div>
+                                        </div>
+                                        <div class="feed-info-new">
+                                            <a href="#">
+                                                <img src="assets/images/resources/vl-logo.png" alt="vllogo" />
+                                                <span>Voetbal International </span>
+                                            </a>
+                                        </div>
+
+                                        <div class="title-box-wrap">
+                                            <a href="#"><h5>Bijna alleen maar negatieve tests in Premier League: Spurs als ...</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Video -->
+
+                            <!-- Single Video -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-xl-23 mb-md-23">
+                                <div class="service-three__single">
+                                    <div class="service-three__image">
+                                        <a href="#"><img src="assets/images/services/services-2-3.jpg" alt="Awesome Image" /></a>
+                                        <div class="vedio-overly">
+                                            <div class="vedio-button">
+                                                <a href="https://www.youtube.com/watch?v=YzDz8g1z83U" class="mfp-iframe vedio-play"></a>
+                                            </div>
+                                        </div>
+                                        <div class="feed-info-new">
+                                            <a href="#">
+                                                <img src="assets/images/resources/vl-logo.png" alt="vllogo" />
+                                                <span>Voetbal International </span>
+                                            </a>
+                                        </div>
+
+                                        <div class="title-box-wrap">
+                                            <a href="#"><h5>Bijna alleen maar negatieve tests in Premier League: Spurs als ...</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Video -->
+
+                            <!-- Single Video -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-xl-23 mb-md-23">
+                                <div class="service-three__single">
+                                    <div class="service-three__image">
+                                        <a href="#"><img src="assets/images/services/services-2-3.jpg" alt="Awesome Image" /></a>
+                                        <div class="vedio-overly">
+                                            <div class="vedio-button">
+                                                <a href="https://www.youtube.com/watch?v=YzDz8g1z83U" class="mfp-iframe vedio-play"></a>
+                                            </div>
+                                        </div>
+                                        <div class="feed-info-new">
+                                            <a href="#">
+                                                <img src="assets/images/resources/vl-logo.png" alt="vllogo" />
+                                                <span>Voetbal International </span>
+                                            </a>
+                                        </div>
+
+                                        <div class="title-box-wrap">
+                                            <a href="#"><h5>Bijna alleen maar negatieve tests in Premier League: Spurs als ...</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Video -->
+
+                            <!-- Single Video -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-xl-23 mb-md-23">
+                                <div class="service-three__single">
+                                    <div class="service-three__image">
+                                        <a href="#"><img src="assets/images/services/services-2-3.jpg" alt="Awesome Image" /></a>
+                                        <div class="vedio-overly">
+                                            <div class="vedio-button">
+                                                <a href="https://www.youtube.com/watch?v=YzDz8g1z83U" class="mfp-iframe vedio-play"></a>
+                                            </div>
+                                        </div>
+                                        <div class="feed-info-new">
+                                            <a href="#">
+                                                <img src="assets/images/resources/vl-logo.png" alt="vllogo" />
+                                                <span>Voetbal International </span>
+                                            </a>
+                                        </div>
+
+                                        <div class="title-box-wrap">
+                                            <a href="#"><h5>Bijna alleen maar negatieve tests in Premier League: Spurs als ...</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Video -->
+
+                            <!-- Single Video -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-xl-23 mb-md-23">
+                                <div class="service-three__single">
+                                    <div class="service-three__image">
+                                        <a href="#"><img src="assets/images/services/services-2-3.jpg" alt="Awesome Image" /></a>
+                                        <div class="vedio-overly">
+                                            <div class="vedio-button">
+                                                <a href="https://www.youtube.com/watch?v=YzDz8g1z83U" class="mfp-iframe vedio-play"></a>
+                                            </div>
+                                        </div>
+                                        <div class="feed-info-new">
+                                            <a href="#">
+                                                <img src="assets/images/resources/vl-logo.png" alt="vllogo" />
+                                                <span>Voetbal International </span>
+                                            </a>
+                                        </div>
+
+                                        <div class="title-box-wrap">
+                                            <a href="#"><h5>Bijna alleen maar negatieve tests in Premier League: Spurs als ...</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Video -->
+
+                            <!-- Single Video -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-xl-23 mb-md-23">
+                                <div class="service-three__single">
+                                    <div class="service-three__image">
+                                        <a href="#"><img src="assets/images/services/services-2-3.jpg" alt="Awesome Image" /></a>
+                                        <div class="vedio-overly">
+                                            <div class="vedio-button">
+                                                <a href="https://www.youtube.com/watch?v=YzDz8g1z83U" class="mfp-iframe vedio-play"></a>
+                                            </div>
+                                        </div>
+                                        <div class="feed-info-new">
+                                            <a href="#">
+                                                <img src="assets/images/resources/vl-logo.png" alt="vllogo" />
+                                                <span>Voetbal International </span>
+                                            </a>
+                                        </div>
+
+                                        <div class="title-box-wrap">
+                                            <a href="#"><h5>Bijna alleen maar negatieve tests in Premier League: Spurs als ...</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Video -->
+
+                            <!-- Single Video -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-xl-23 mb-md-23">
+                                <div class="service-three__single">
+                                    <div class="service-three__image">
+                                        <a href="#"><img src="assets/images/services/services-2-3.jpg" alt="Awesome Image" /></a>
+                                        <div class="vedio-overly">
+                                            <div class="vedio-button">
+                                                <a href="https://www.youtube.com/watch?v=YzDz8g1z83U" class="mfp-iframe vedio-play"></a>
+                                            </div>
+                                        </div>
+                                        <div class="feed-info-new">
+                                            <a href="#">
+                                                <img src="assets/images/resources/vl-logo.png" alt="vllogo" />
+                                                <span>Voetbal International </span>
+                                            </a>
+                                        </div>
+
+                                        <div class="title-box-wrap">
+                                            <a href="#"><h5>Bijna alleen maar negatieve tests in Premier League: Spurs als ...</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Video -->
+
+                            <!-- Single Video -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-md-23">
+                                <div class="service-three__single">
+                                    <div class="service-three__image">
+                                        <a href="#"><img src="assets/images/services/services-2-3.jpg" alt="Awesome Image" /></a>
+                                        <div class="vedio-overly">
+                                            <div class="vedio-button">
+                                                <a href="https://www.youtube.com/watch?v=YzDz8g1z83U" class="mfp-iframe vedio-play"></a>
+                                            </div>
+                                        </div>
+                                        <div class="feed-info-new">
+                                            <a href="#">
+                                                <img src="assets/images/resources/vl-logo.png" alt="vllogo" />
+                                                <span>Voetbal International </span>
+                                            </a>
+                                        </div>
+
+                                        <div class="title-box-wrap">
+                                            <a href="#"><h5>Bijna alleen maar negatieve tests in Premier League: Spurs als ...</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Video -->
+
+                            <!-- Single Video -->
+                            <div class="col-lg-4 col-md-6 col-sm-6 mb-md-23">
+                                <div class="service-three__single">
+                                    <div class="service-three__image">
+                                        <a href="#"><img src="assets/images/services/services-2-3.jpg" alt="Awesome Image" /></a>
+                                        <div class="vedio-overly">
+                                            <div class="vedio-button">
+                                                <a href="https://www.youtube.com/watch?v=YzDz8g1z83U" class="mfp-iframe vedio-play"></a>
+                                            </div>
+                                        </div>
+                                        <div class="feed-info-new">
+                                            <a href="#">
+                                                <img src="assets/images/resources/vl-logo.png" alt="vllogo" />
+                                                <span>Voetbal International </span>
+                                            </a>
+                                        </div>
+
+                                        <div class="title-box-wrap">
+                                            <a href="#"><h5>Bijna alleen maar negatieve tests in Premier League: Spurs als ...</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Video -->
+
+                            <!-- Single Video -->
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="service-three__single">
+                                    <div class="service-three__image">
+                                        <a href="#"><img src="assets/images/services/services-2-3.jpg" alt="Awesome Image" /></a>
+                                        <div class="vedio-overly">
+                                            <div class="vedio-button">
+                                                <a href="https://www.youtube.com/watch?v=YzDz8g1z83U" class="mfp-iframe vedio-play"></a>
+                                            </div>
+                                        </div>
+                                        <div class="feed-info-new">
+                                            <a href="#">
+                                                <img src="assets/images/resources/vl-logo.png" alt="vllogo" />
+                                                <span>Voetbal International </span>
+                                            </a>
+                                        </div>
+
+                                        <div class="title-box-wrap">
+                                            <a href="#"><h5>Bijna alleen maar negatieve tests in Premier League: Spurs als ...</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Video -->
+                        </div>
+                    </div>
+                    <!-- Collapse More Videos -->
+
+                    <!-- Load More Button -->
+                    <div class="loadmore text-center">
+                        <a data-toggle="collapse" href="#collapseVideos" role="button" aria-expanded="false" aria-controls="collapseVideos">Meer video's</a>
+                    </div>
+                    <!-- Load More Button -->
+                </div>
+            </section>
+            <!-- All Videos Area -->
+        </main>
+        <!-- Main Content Area -->
+
+        <!-- Footer Area -->
+        <footer class="site-footer footer-one footer-inner-page">
+            <!-- Upper Footer Area -->
+            <div class="upper-footer">
+                <div class="container">
+                    <div class="social-block">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                    <div class="button-block">
+                        <form method="_POST">
+                            <input type="text" name="email" placeholder="Your email address" />
+                            <button class="thm-btn" type="button" value="submit">Subscribe</button>
+                        </form>
+                        <span class="btn-tagline">Looking for Live Match <i class="inston-icon-share"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Upper Footer Area -->
+
+            <!-- Middle Footer Area -->
+            <div class="middle-footer">
+                <div class="container">
+                    <div class="row">
+                        <!-- Footer Logo Area -->
+                        <div class="col-lg-4 col-sm-7">
+                            <div class="footer-widget">
+                                <a href="/" class="footer-logo"><img src="assets/images/resources/logo.png" alt="Awesome Image" /></a>
+                                <p>Op voetbalmoment.nl kan de voetballiefhebber al het laatste voetbalnieuws vinden van verschillende gerenommeerde bronnen. De redactie van voetbalmoment.nl heeft de bronnen met <a href="over-voetbalmoment-nl.php">Lees Meer...</a></p>
+                            </div>
+                        </div>
+                        <!-- Footer Logo Area -->
+
+                        <!-- Footer Quick Links Area -->
+                        <div class="col-lg-2 col-sm-4 offset-md-1 offset-sm-1 offset-lg-0">
+                            <div class="footer-widget legal-widget">
+                                <div class="widget-title">
+                                    <h3>Quick Links</h3>
+                                </div>
+                                <ul class="links-list">
+                                    <li><a href="over-voetbalmoment-nl.php">About</a></li>
+                                    <li><a href="contactus.php">Contact</a></li>
+                                    <li><a href="#">What We Do</a></li>
+                                    <li><a href="#">Plans &amp; Pricing</a></li>
+                                    <li><a href="#">How They Works</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Quick Links Area -->
+
+                        <!-- Footer Football Area -->
+                        <div class="col-lg-2 col-sm-4">
+                            <div class="footer-widget legal-widget">
+                                <div class="widget-title">
+                                    <h3>Football</h3>
+                                </div>
+                                <ul class="links-list">
+                                    <li><a href="#">Join us</a></li>
+                                    <li><a href="disclaimer.php">Disclaimer</a></li>
+                                    <li><a href="cookies.php">Cookies</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms of Use</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Football Area -->
+
+                        <!-- Footer International Area -->
+                        <div class="col-lg-2 col-sm-4">
+                            <div class="footer-widget legal-widget">
+                                <div class="widget-title">
+                                    <h3>International</h3>
+                                </div>
+                                <ul class="links-list">
+                                    <li><a href="#">Join us</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">News</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms of Use</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer International Area -->
+
+                        <!-- Footer Help Area -->
+                        <div class="col-lg-2 col-sm-4">
+                            <div class="footer-widget legal-widget">
+                                <div class="widget-title">
+                                    <h3>Help</h3>
+                                </div>
+                                <ul class="links-list">
+                                    <li><a href="#">Join us</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">News</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms of Use</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Help Area -->
+                    </div>
+                </div>
+            </div>
+            <!-- Middle Footer Area -->
+
+            <!-- Bottom Footer Area -->
+            <div class="bottom-footer text-center">
+                <div class="container">
+                    <p>© Copyright 2018-2020 by <a href="#">voetbalmoment.nl</a></p>
+                </div>
+            </div>
+            <!-- Bottom Footer Area -->
+        </footer>
+        <!-- Footer Area -->
+
+        <!-- Back Top Area -->
+        <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+        <!-- Back Top Area -->
+
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/swiper.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/jquery.validate.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/theme.js"></script>
+    </body>
+</html>
+<!--End Here footer Area-->
